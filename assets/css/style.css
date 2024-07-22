@@ -12,10 +12,23 @@ html, body{
 #container{
 	display: flex;
 	justify-content: center;
-	background-color: #016D29;
+	flex-wrap:wrap;
+	background-image: linear-gradient(to right ,black,black);
 	height: 470px;
 	padding: 20px;
 	color: #fff;
+}
+
+@media (max-width:767px){
+	#container{
+		display: flex;
+		justify-content: center;
+		flex-wrap:wrap;
+		background-image: linear-gradient(to right ,black,black);
+		height: 470px;
+		padding: 20px;
+		color: #fff;
+	}
 }
 
 /*notification*/
@@ -412,6 +425,15 @@ html, body{
 	left: -75px;
 }
 	
+@media (max-width:767px){
+	.wheel {
+		height: 312px;
+		width: 312px;
+		left: 0;
+		position: relative;
+	}
+}
+
 .ballTrack{
 	width: 212px;
 	height: 207px;
