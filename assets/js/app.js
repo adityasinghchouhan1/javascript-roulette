@@ -587,7 +587,7 @@ function removeBet(e, n, t, o){
 				bet[i].amt = bet[i].amt - wager;
 				bankValue = bankValue + wager;
 				currentBet = currentBet - wager;
-				document.getElementById('bankSpan').innerText = '' + bankValue.toLocaleString("en-GB") + '';
+				document.getElementById('bankSpan').innerText = '' + bankValue.toLocaleString("en-GB") + ' ';
 				document.getElementById('betSpan').innerText = '' + currentBet.toLocaleString("en-GB") + '';
 				if(bet[i].amt == 0){
 					e.querySelector('.chip').style.cssText = 'display:none';
